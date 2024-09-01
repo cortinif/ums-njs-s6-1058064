@@ -9,7 +9,6 @@ const router = express.Router();
 
 router.get("/", (req, res, next) => {
 	const users = adminData.users;
-	// const products = [];
 	const hasNotUsers = users.length <= 0;
 	console.log(users);
 	res.render("users", {
